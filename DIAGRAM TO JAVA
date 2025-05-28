@@ -1,1 +1,155 @@
+// user authentication
+public class UserAuthentication {
+    private String email;
+    private String password;
+
+    public boolean verifyEmail() {
+        // implementation
+        return true;
+    }
+
+    public boolean verifyPassword() {
+        // implementation
+        return true;
+    }
+
+    public void resetPassword() {
+        // implementation
+    }
+
+    public String employeeTypeIdentifier() {
+        // implementation
+        return "EmployeeType";
+    }
+}
+
+// employee
+public class Employee {
+    private String employeeID;
+    private String employeeName;
+    private String employeeType;
+    private String position;
+    private int age;
+    private String dateOfBirth;
+
+    public void editProfile() {
+        // implementation
+    }
+}
+
+// attendance
+public class Attendance {
+    private String employeeID;
+    private String date;
+    private int timeIn;
+    private int timeOut;
+    private int gracePeriod;
+    private int workingHours;
+
+    public void scanID() {
+        // implementation
+    }
+
+    public int calculateHoursWorked() {
+        // implementation
+        return 0;
+    }
+
+    public int calculateHoursLate() {
+        // implementation
+        return 0;
+    }
+
+    public String employeeStatus() {
+        // implementation
+        return "Status";
+    }
+}
+
+// payroll
+public class Payroll {
+    private float hourlyRates;
+    private double govDeduct;
+    private double govContrib;
+    private double tax;
+    private float overtimeRate;
+
+    public double calculateGrossPay() {
+        // implementation
+        return 0.0;
+    }
+
+    public double calculateNetSalary() {
+        // implementation
+        return 0.0;
+    }
+
+    public double calculateOvertimePay() {
+        // implementation
+        return 0.0;
+    }
+
+    public void downloadPayslip() {
+        // implementation
+    }
+
+    public void releasePayslip() {
+        // implementation
+    }
+
+    public void generateReport() {
+        // implementation
+    }
+}
+
+// overtime
+public class Overtime {
+    public void viewHistory() {
+        // implementation
+    }
+
+    public void startDate() {}
+    public void endDate() {}
+    public void startTime() {}
+    public void endTime() {}
+
+    public int calculateOvertimeHrs() {
+        // implementation
+        return 0;
+    }
+
+    public void apply() {}
+    public void approve() {}
+    public void reject() {}
+
+    public String applicationStatus() {
+        return "Status";
+    }
+
+    public void generateReport() {}
+}
+
+// leave
+public class Leave {
+    public void viewHistory() {
+        // implementation
+    }
+
+    public void startDate() {}
+    public void endDate() {}
+
+    public void leaveType() {}
+
+    public void reason() {}
+
+    public void apply() {}
+    public void approve() {}
+    public void reject() {}
+
+    public String applicationStatus() {
+        return "Status";
+    }
+
+    public void generateReport() {}
+}
 
