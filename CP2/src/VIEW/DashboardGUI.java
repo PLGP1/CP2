@@ -12,18 +12,18 @@ public class DashboardGUI extends JFrame {
     private JButton profileButton;
     private JButton logoutButton;
 
-    public DashboardGUI(String username) {
+    public DashboardGUI(String Manuel) {
         setTitle("MotorPH Dashboard");
         setSize(400, 300);
         setLocationRelativeTo(null); // center on screen
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        initComponents(username);
+        initComponents(Manuel);
     }
 
-    private void initComponents(String username) {
+    private void initComponents(String Manuel) {
         // Top welcome label
-        welcomeLabel = new JLabel("Welcome, " + username + "!", SwingConstants.CENTER);
+        welcomeLabel = new JLabel("Welcome, " + Manuel + "!", SwingConstants.CENTER);
         welcomeLabel.setFont(new Font("Arial", Font.BOLD, 18));
         welcomeLabel.setBorder(BorderFactory.createEmptyBorder(20, 10, 20, 10));
         add(welcomeLabel, BorderLayout.NORTH);
@@ -46,17 +46,17 @@ public class DashboardGUI extends JFrame {
 
         // Button actions
         attendanceButton.addActionListener(e -> {
-            new AttendanceGUI(username).setVisible(true);
+            new AttendanceGUI(Manuel).setVisible(true);
             dispose();
         });
 
         payrollButton.addActionListener(e -> {
-            new PayrollGUI(username).setVisible(true);
+            new PayrollGUI(Manuel).setVisible(true);
             dispose();
         });
 
         profileButton.addActionListener(e -> {
-            new ProfileGUI(username).setVisible(true);
+            new ProfileGUI(Manuel).setVisible(true);
             dispose();
         });
 
